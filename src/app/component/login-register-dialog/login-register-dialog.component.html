@@ -1,0 +1,41 @@
+<mat-dialog-content>
+<mat-tab-group>
+    <mat-tab label="Login">
+      <!-- Login form here -->
+      <form class="form" (ngSubmit)="login(username.value, password.value)">
+        <mat-form-field>
+          <input matInput placeholder="Username" #username>
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Password" type="password" #password>
+        </mat-form-field>
+        <div class="button-container">
+          <button mat-raised-button color="primary" type="submit">Login</button>
+        </div>
+      </form>
+      
+      <mat-tab label="Register">
+        <!-- Registration form here -->
+        <form class="form">
+          <mat-form-field>
+            <input matInput placeholder="Username">
+          </mat-form-field>
+          <mat-form-field>
+            <input matInput placeholder="Email">
+          </mat-form-field>
+          <mat-form-field>
+            <input matInput placeholder="Password" type="password">
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Login as</mat-label>
+            <mat-select>
+              <mat-option value="customer">Customer</mat-option>
+              <mat-option value="seller">Seller</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <div class="button-container">
+            <button mat-raised-button color="primary">Register</button>
+          </div>
+        </form>
+      </mat-tab>
+      

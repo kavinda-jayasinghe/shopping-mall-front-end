@@ -1,0 +1,7 @@
+.background-image-container {
+    background-image: url('https://i.postimg.cc/Y9Pcfz44/Screenshot-2024-03-24-170707.png'); /* Replace 'path_to_your_image.jpg' with the actual path to your image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    width: 100vw; /* Full width of the viewport */
+    height: 100vh; /* Full height of the viewport */
+}
